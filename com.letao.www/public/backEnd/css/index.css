@@ -1,0 +1,100 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Microsoft YaHei";
+}
+/*�Ҳ�˵���*/
+.menu {
+  width: 180px;
+  height: 100%;
+  background-color: #222d32;
+  position: absolute;
+  left: 0;
+  /*�û���ʾ*/
+  /*�˵���*/
+}
+.menu .brand {
+  background-color: #367fa9;
+  width: 100%;
+  height: 50px;
+}
+.menu .brand a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+.menu .user {
+  padding: 30px 20px;
+}
+.menu .user span {
+  color: #ffffff;
+  font-size: 12px;
+}
+.menu .user img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.menu .aside ul {
+  width: 100%;
+  height: 100%;
+}
+.menu .aside ul li {
+  width: 100%;
+}
+.menu .aside ul li a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #aaaaaa;
+  text-decoration: none;
+  padding-left: 32px;
+}
+.menu .aside ul li span {
+  padding-right: 3px;
+}
+/*======��������=====*/
+.content {
+  padding-left: 180px;
+  width: 100%;
+  height: 50px;
+  background-color: #3c8dbc;
+  box-sizing: border-box;
+  /*��������*/
+  /*��ҳ����չʾ*/
+}
+.content .topnav {
+  height: 100%;
+  overflow: hidden;
+}
+.content .topnav a {
+  height: 100%;
+  line-height: 50px;
+  color: #ffffff;
+  font-size: 16px;
+}
+.content .topnav a:first-child {
+  float: left;
+  margin-left: 10px;
+}
+.content .topnav a:last-child {
+  float: right;
+  margin-right: 10px;
+}
+.content .mainContent {
+  margin-top: 15px;
+  /*·������*/
+}
+.content .mainContent .breadcrumb .breadcrumb a {
+  text-decoration: none;
+}
