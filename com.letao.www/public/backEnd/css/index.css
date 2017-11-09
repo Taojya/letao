@@ -4,15 +4,15 @@ html {
   height: 100%;
   font-family: "Microsoft YaHei";
 }
-/*�Ҳ�˵���*/
+/*右侧菜单*/
 .menu {
   width: 180px;
   height: 100%;
   background-color: #222d32;
   position: absolute;
   left: 0;
-  /*�û���ʾ*/
-  /*�˵���*/
+  /*用户显示*/
+  /*菜单栏*/
 }
 .menu .brand {
   background-color: #367fa9;
@@ -58,20 +58,20 @@ html {
   font-size: 14px;
   color: #aaaaaa;
   text-decoration: none;
-  padding-left: 32px;
+  padding-left: -15px;
 }
 .menu .aside ul li span {
   padding-right: 3px;
 }
-/*======��������=====*/
+/*======内容=====*/
 .content {
   padding-left: 180px;
   width: 100%;
   height: 50px;
   background-color: #3c8dbc;
   box-sizing: border-box;
-  /*��������*/
-  /*��ҳ����չʾ*/
+  /*顶部导航*/
+  /*首页内容*/
 }
 .content .topnav {
   height: 100%;
@@ -93,8 +93,27 @@ html {
 }
 .content .mainContent {
   margin-top: 15px;
-  /*·������*/
+  /*路径导航*/
+  /*==charts===*/
 }
 .content .mainContent .breadcrumb .breadcrumb a {
   text-decoration: none;
+}
+.content .mainContent .picTable {
+  margin-top: 30px;
+  margin-left: 10px;
+  overflow: hidden;
+  /*柱状图*/
+  /*饼状图*/
+}
+.content .mainContent .picTable #colunm {
+  float: left;
+  width: 400px;
+  height: 400px;
+}
+.content .mainContent .picTable #pie {
+  width: 500px;
+  height: 400px;
+  float: right;
+  margin-right: 40px;
 }

@@ -1,107 +1,128 @@
 @import "settings.less";
-
-body, html {
-  width: 100%;
-  height: 100%;
-  font-family: "Microsoft YaHei";
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Microsoft YaHei";
 }
 
-/*”“≤‡≤Àµ•¿∏*/
+
+/*Âè≥‰æßËèúÂçï*/
+
 .menu {
-  width: 180px;
-  height: 100%;
-  background-color: @menuColor;
-  position: absolute;
-  left: 0;
-  //…Ã±Í
-  .brand {
-    background-color: @navLeftColor;
+    width: 180px;
+    height: 100%;
+    background-color: @menuColor;
+    position: absolute;
+    left: 0; //logo
+    .brand {
+        background-color: @navLeftColor;
+        width: 100%;
+        height: 50px;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 50px;
+            text-align: center;
+            color: @barFondColor;
+        }
+    }
+    /*Áî®Êà∑ÊòæÁ§∫*/
+    .user {
+        padding: 30px 20px;
+        span {
+            color: @barFondColor;
+            font-size: 12px;
+        }
+        img {
+            width: 50px;
+            height: auto;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+    /*ËèúÂçïÊ†è*/
+    .aside ul {
+        width: 100%;
+        height: 100%;
+        li {
+            width: 100%;
+            a {
+                display: block;
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+                color: @menuFondColor;
+                text-decoration: none;
+                padding-left: -15px;
+            }
+            span {
+                padding-right: 3px;
+            }
+        }
+    }
+}
+
+
+/*======ÂÜÖÂÆπ=====*/
+
+.content {
+    padding-left: 180px;
     width: 100%;
     height: 50px;
-    a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: bold;
-      line-height: 50px;
-      text-align: center;
-      color: @barFondColor;
+    background-color: @navRightColor;
+    box-sizing: border-box;
+    /*È°∂ÈÉ®ÂØºËà™*/
+    .topnav {
+        //width: 100%;
+        height: 100%;
+        overflow: hidden;
+        a {
+            height: 100%;
+            line-height: 50px;
+            color: @barFondColor;
+            font-size: 16px;
+        }
+        a:first-child {
+            float: left;
+            margin-left: 10px;
+        }
+        a:last-child {
+            float: right;
+            margin-right: 10px;
+        }
     }
-  }
-  /*”√ªßœ‘ æ*/
-  .user {
-    padding: 30px 20px;
-    span {
-      color: @barFondColor;
-      font-size: 12px;
+    /*È¶ñÈ°µÂÜÖÂÆπ*/
+    .mainContent {
+        margin-top: 15px;
+        /*Ë∑ØÂæÑÂØºËà™*/
+        .breadcrumb .breadcrumb a {
+            text-decoration: none;
+        }
+        /*==charts===*/
+        .picTable {
+            margin-top: 30px;
+            margin-left: 10px;
+            overflow: hidden;
+            /*Êü±Áä∂Âõæ*/
+            #colunm {
+              float: left;
+                width: 400px;
+                height: 400px;
+            }
+            /*È•ºÁä∂Âõæ*/
+            #pie{
+              width: 500px;
+              height: 400px;
+              float: right;
+              margin-right:40px;
+            }
+        }
+        
     }
-    img {
-      width: 50px;
-      height: auto;
-      border-radius: 50%;
-      overflow: hidden;
-    }
-  }
-  /*≤Àµ•¿∏*/
-  .aside ul {
-    width: 100%;
-    height: 100%;
-    li {
-      width: 100%;
-      a {
-        display: block;
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
-        font-size: 14px;
-        color: @menuFondColor;
-        text-decoration: none;
-        padding-left: 32px;
-      }
-      span {
-        padding-right: 3px;
-      }
-    }
-  }
-}
-
-/*======ƒ⁄»›«¯”Ú=====*/
-.content {
-  padding-left: 180px;
-  width: 100%;
-  height: 50px;
-  background-color: @navRightColor;
-  box-sizing: border-box;
-  /*∂•≤øµº∫Ω*/
-  .topnav {
-    //width: 100%;
-    height: 100%;
-    overflow: hidden;
-    a {
-      height: 100%;
-      line-height: 50px;
-      color: @barFondColor;
-      font-size: 16px;
-    }
-    a:first-child {
-      float: left;
-      margin-left: 10px;
-    }
-    a:last-child {
-      float: right;
-      margin-right: 10px;
-    }
-  }
-  /* ◊“≥ƒ⁄»›’π æ*/
-  .mainContent {
-    margin-top: 15px;
-    /*¬∑æ∂µº∫Ω*/
-    .breadcrumb .breadcrumb a {
-      text-decoration: none;
-    }
-  }
-
-
 }
