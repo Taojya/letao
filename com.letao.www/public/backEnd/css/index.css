@@ -28,13 +28,13 @@ html {
   font-weight: bold;
   line-height: 50px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 .menu .user {
   padding: 30px 20px;
 }
 .menu .user span {
-  color: #ffffff;
+  color: #fff;
   font-size: 12px;
 }
 .menu .user img {
@@ -57,8 +57,14 @@ html {
   height: 40px;
   line-height: 40px;
   font-size: 14px;
-  color: #aaaaaa;
+  color: #aaa;
   text-decoration: none;
+}
+.menu .aside ul li a.chosen {
+  color: #fff;
+  border-left: 2px solid #3c8dbc;
+  box-sizing: border-box;
+  background-color: #1d1f21;
 }
 .menu .aside ul li span {
   padding-right: 3px;
@@ -82,7 +88,7 @@ html {
 .content .topnav a {
   height: 100%;
   line-height: 50px;
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
 }
 .content .topnav a:first-child {
