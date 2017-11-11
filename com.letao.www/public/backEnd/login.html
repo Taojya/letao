@@ -31,22 +31,29 @@
   <script src="./js/login.js"></script>
 </head>
 
-<body>
-  <div class="container-fluid col-md-4 col-md-offset-4">
+<body class="loginPage">
+  <div class="container-fluid col-md-4 col-md-offset-4 loginTip">
     <div class="panel panel-primary">
-      <div class="panel-heading">后台管理系统</div>
-      <div class="panel-body">
+      <div class="panel-heading text-center">后台管理系统</div>
+      <div class="panel-body">  
         <form>
           <div class="form-group">
-            <label for="user">账号</label>
-            <input type="email" class="form-control" id="user" name="user" placeholder="请输入用户名">
+            <label for="user" class="col-sm-3 text-center">账号:</label>
+            <div class="col-sm-9">
+              <input type="email" class="form-control" id="user" name="user" placeholder="请输入用户名">
+            </div>
           </div>
           <div class="form-group">
-            <label for="password">密码</label>
-            <input type="password" class="form-control"  id="password" name="password" placeholder="请输入密码">
+            <label for="password" class="col-sm-3 text-center">密码:</label>
+            <div class="col-sm-9">
+              <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码">
+            </div>
           </div>
-          <button type="reset" class="btn btn-default">重置</button>
-          <button type="submit" class="btn btn-primary">登录</button>
+          <div class="loginBtn">
+              <button type="reset" class="btn btn-default resetLogin">重置</button>
+              <button type="submit" class="btn btn-primary">登录</button>
+          </div>
+         
         </form>
       </div>
     </div>

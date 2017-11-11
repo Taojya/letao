@@ -28,13 +28,13 @@ html {
   font-weight: bold;
   line-height: 50px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 .menu .user {
   padding: 30px 20px;
 }
 .menu .user span {
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
 }
 .menu .user img {
@@ -57,11 +57,11 @@ html {
   height: 40px;
   line-height: 40px;
   font-size: 14px;
-  color: #aaa;
+  color: #aaaaaa;
   text-decoration: none;
 }
 .menu .aside ul li a.chosen {
-  color: #fff;
+  color: #ffffff;
   border-left: 2px solid #3c8dbc;
   box-sizing: border-box;
   background-color: #1d1f21;
@@ -88,7 +88,7 @@ html {
 .content .topnav a {
   height: 100%;
   line-height: 50px;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
 }
 .content .topnav a:first-child {
@@ -125,4 +125,27 @@ html {
   height: 400px;
   float: right;
   margin-right: 10%;
+}
+/*登录界面样式*/
+.loginPage {
+  background-color: #222d32;
+}
+.loginPage .loginTip {
+  margin-top: 150px;
+  width: 30%;
+}
+.loginPage .loginTip .panel-heading {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 38px;
+}
+.loginPage .loginTip .form-group {
+  padding: 20px 0;
+}
+.loginPage .loginTip .loginBtn {
+  padding: 20px 0;
+}
+.loginPage .loginTip .loginBtn .resetLogin {
+  margin-left: 30%;
+  margin-right: 20%;
 }
