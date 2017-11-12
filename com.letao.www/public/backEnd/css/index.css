@@ -149,3 +149,7 @@ html {
   margin-left: 30%;
   margin-right: 20%;
 }
+/*分类商品按钮样式*/
+.listTable #addBtn {
+  margin-bottom: 15px;
+}
