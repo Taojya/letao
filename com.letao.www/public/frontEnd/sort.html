@@ -117,42 +117,6 @@
   </div>
 
 
-  <!-- 一级分类的模板 -->
-  <script type="text/template" id="firstTemplate">
-    <%for(var i = 0; i< rows.length;i++){%>
-      <%if(i == 0){%>
-        <li>
-          <a class="active" data-id="<%=rows[i].id%>" href="javascript:;"><%=rows[i].categoryName%></a>
-        </li>
-        <% }else {%>
-        <li>
-          <a data-id="<%=rows[i].id%>" href="javascript:;"><%=rows[i].categoryName%></a>
-        </li>
-        <%}%>
-  
-        <%}%>
-  
-  </script>
-
-  <!-- 二级分类的模板 -->
-  <script type="text/template" id="secondTemplate">
-    <%if(rows.length == 0 ){%>
-      <li class="nodata">
-        没有数据哦！！
-      </li>
-      <%}else {%>
-      <%for(var i = 0; i< rows.length;i++){%>
-        <li>
-          <a href="#">
-            <img src="<%=rows[i].brandLogo%>" alt="<%=rows[i].brandName%>">
-            <span><%=rows[i].brandName%></span>
-          </a>
-        </li>
-        <%}%>
-        <%}%>
-    
-
-  </script>
 
   <script src="./lib/mui/js/mui.min.js"></script>
   <!-- 这是zepto里的核心模块之一在开发的时候可以一一进行引入 但是当项目上线之后 就需要合并所有模块 -->
